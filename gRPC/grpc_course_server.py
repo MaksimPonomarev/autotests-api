@@ -2,7 +2,7 @@ from concurrent import futures  # Импорт пула потоков для а
 
 import grpc  # Импорт библиотеки gRPC
 
-import course_service_pb2  # Сгенерированные классы для работы с gRPC-сообщениями
+from gRPC import course_service_pb2
 import course_service_pb2_grpc  # Сгенерированный класс для работы с сервисом
 
 

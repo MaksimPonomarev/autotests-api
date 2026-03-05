@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>WS test</title>
+<script>
+  const ws = new WebSocket("ws://localhost:8765");
+
+  ws.onopen = () => console.log("WS open");
+  ws.onmessage = (m) => console.log("message:", m.data);
+  ws.onerror = (e) => console.log("WS error", e);
+  ws.onclose = () => console.log("WS close");
+</script>
