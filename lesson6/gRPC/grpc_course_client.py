@@ -1,6 +1,6 @@
 import grpc
 
-from gRPC import course_service_pb2
+from lesson6.gRPC import course_service_pb2
 import course_service_pb2_grpc
 
 # Устанавливаем соединение с сервером
