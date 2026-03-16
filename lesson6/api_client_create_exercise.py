@@ -1,26 +1,26 @@
 from lesson6.clients.courses.courses_client import get_courses_client, CreateCourseRequestDict
-from lesson6.clients.exercises.exercises_client import ExercisesClient, CreateExerciseRequestDict, get_exercises_client
+from lesson6.clients.exercises.exercises_client import CreateExerciseRequestDict, get_exercises_client
 from lesson6.clients.files.files_client import get_files_client, CreateFileRequestDict
-from lesson6.clients.private_http_builder import AuthenticationUserDict
-from lesson6.clients.users.public_users_client import get_public_users_client, CreateUserRequestDict
+from lesson6.clients.private_http_builder import AuthenticationUserSchema
+from lesson6.clients.users.public_users_client import get_public_users_client, CreateUserRequestSchema
 from lesson6.tools.fakers import get_random_email
 
 public_users_client = get_public_users_client()
 
 # Создаем пользователя
-create_user_request = CreateUserRequestDict(
+create_user_request = CreateUserRequestSchema(
     email=get_random_email(),
     password="string",
-    lastName="string",
-    firstName="string",
-    middleName="string"
+    last_name="string",
+    first_name="string",
+    middle_name="string"
 )
 create_user_response = public_users_client.create_user(create_user_request)
 
 # Инициализируем клиенты
-authentication_user = AuthenticationUserDict(
-    email=create_user_request['email'],
-    password=create_user_request['password']
+authentication_user = AuthenticationUserSchema(
+    email=create_user_request.email,
+    password=create_user_request.password
 )
 files_client = get_files_client(authentication_user)
 courses_client = get_courses_client(authentication_user)
