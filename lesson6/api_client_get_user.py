@@ -1,7 +1,6 @@
 from lesson6.clients.private_http_builder import AuthenticationUserSchema
 from lesson6.clients.users.private_users_client import get_private_users_client
 from lesson6.clients.users.public_users_client import get_public_users_client
-# Вместо CreateUserRequestDict импортируем CreateUserRequestSchema
 from lesson6.clients.users.users_schema import CreateUserRequestSchema
 from lesson6.tools.fakers import get_random_email
 
