@@ -5,7 +5,7 @@ from lesson6.clients.authentication.authentication_client import get_authenticat
 from lesson6.clients.authentication.authentication_schema import LoginRequestSchema
 
 
-class AuthenticationUserSchema(BaseModel):  # Наследуем от BaseModel вместо TypedDict
+class AuthenticationUserSchema(BaseModel):
     email: str
     password: str
 
