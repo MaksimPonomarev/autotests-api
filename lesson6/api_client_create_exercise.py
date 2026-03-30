@@ -3,18 +3,11 @@ from lesson6.clients.exercises.exercises_client import CreateExerciseRequestSche
 from lesson6.clients.files.files_client import get_files_client, CreateFileRequestSchema
 from lesson6.clients.private_http_builder import AuthenticationUserSchema
 from lesson6.clients.users.public_users_client import get_public_users_client, CreateUserRequestSchema
-from lesson6.tools.fakers import get_random_email
 
 public_users_client = get_public_users_client()
 
 # Создаем пользователя
-create_user_request = CreateUserRequestSchema(
-    email=fake.email(),
-    password="string",
-    last_name="string",
-    first_name="string",
-    middle_name="string"
-)
+create_user_request = CreateUserRequestSchema()
 create_user_response = public_users_client.create_user(create_user_request)
 
 # Инициализируем клиенты
@@ -27,20 +20,13 @@ courses_client = get_courses_client(authentication_user)
 
 # Загружаем файл
 create_file_request = CreateFileRequestSchema(
-    filename="image.png",
-    directory="courses",
-    upload_file="./testdata/files/image.png"
+    upload_file="../testdata/files/image.png"
 )
 create_file_response = files_client.create_file(create_file_request)
 print('Create file data:', create_file_response)
 
 # Создаем курс
 create_course_request = CreateCourseRequestSchema(
-    title="Python",
-    max_score=100,
-    min_score=10,
-    description="Python API course",
-    estimated_time="2 weeks",
     preview_file_id=create_file_response.file.id,
     created_by_user_id=create_user_response.user.id
 )
@@ -50,13 +36,8 @@ print('Create course data:', create_course_response)
 #Создаем задание для курса
 create_exercise_client = get_exercises_client(authentication_user)
 create_exercise_request = CreateExerciseRequestSchema(
-    title = "Lesson5",
     course_id = create_course_response.course.id,
-    max_score = 0,
-    min_score = 0,
-    order_index = 0,
-    description = "string",
-    estimated_time = "string"
+
 )
 create_exercise_response = create_exercise_client.create_exercise(create_exercise_request)
 print("Create exercise data: ", create_exercise_response)
