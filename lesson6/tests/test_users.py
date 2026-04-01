@@ -16,7 +16,6 @@ def test_create_user():
     response_data = CreateUserResponseSchema.model_validate_json(response.text)
 
     assert_status_code(response.status_code, HTTPStatus.OK)
-
     assert_create_user_response(request, response_data)
     # Проверяем, что тело ответа соответствует ожидаемой JSON-схеме
     validate_json_schema(response.json(), response_data.model_json_schema())
