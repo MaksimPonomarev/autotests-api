@@ -1,3 +1,5 @@
+from functools import lru_cache  # Импортируем функцию для кеширования
+
 from httpx import Client
 from pydantic import BaseModel
 
@@ -6,12 +8,16 @@ from lesson6.clients.authentication.authentication_schema import LoginRequestSch
 
 
 class AuthenticationUserSchema(BaseModel):
+    model_config = {"frozen": True}
+
     email: str
     password: str
 
 
+@lru_cache(maxsize=None)  # Кешируем возвращаемое значение
 def get_private_http_client(user: AuthenticationUserSchema) -> Client:
     authentication_client = get_authentication_client()
+
     login_request = LoginRequestSchema(email=user.email, password=user.password)
     login_response = authentication_client.login(login_request)
 
