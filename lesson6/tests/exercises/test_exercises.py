@@ -1,9 +1,9 @@
 from http import HTTPStatus
 from http.client import HTTPResponse
-
+import allure
 import pytest
 from httpx import request
-
+from lesson6.tools.allure.tags import AllureTag
 from lesson6.clients.errors_schema import InternalErrorResponseSchema
 from lesson6.clients.exercises.exercises_client import ExercisesClient
 from lesson6.clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
@@ -14,14 +14,30 @@ from lesson6.tools.assertions.base import assert_status_code
 from lesson6.tools.assertions.exercises import assert_create_exercise_response, assert_get_exercise_response, \
     assert_update_exercise_response, assert_exercise_not_found_response, assert_get_exercises_response
 from lesson6.tools.assertions.schema import validate_json_schema
+from lesson6.tools.allure.epics import AllureEpic
+from lesson6.tools.allure.stories import AllureStory
+from lesson6.tools.allure.features import AllureFeature
+from allure_commons.types import Severity
 
 
+
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.EXERCISES)
 @pytest.mark.exercises
 @pytest.mark.regression
+@allure.tag(AllureTag.EXERCISES, AllureTag.REGRESSION)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.EXERCISES)
 class TestExercises:
     """
     Тестовый класс для заданий
     """
+
+    @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.title("Create exercise")
+    @allure.tag(AllureTag.CREATE_ENTITY)
+    @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     def test_create_exercise(
             self,
             exercises_client: ExercisesClient,
@@ -41,6 +57,11 @@ class TestExercises:
         validate_json_schema(response.json(), CreateExerciseResponseSchema.model_json_schema())
 
 
+    @allure.story(AllureStory.GET_ENTITY)
+    @allure.tag(AllureTag.GET_ENTITY)
+    @allure.title("Get exercise")
+    @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     def test_get_exercise(
             self,
             exercises_client: ExercisesClient,
@@ -60,7 +81,11 @@ class TestExercises:
 
         validate_json_schema(response.json(), GetExerciseResponseSchema.model_json_schema())
 
-
+    @allure.story(AllureStory.UPDATE_ENTITY)
+    @allure.tag(AllureTag.UPDATE_ENTITY)
+    @allure.title("Update exercise")
+    @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.UPDATE_ENTITY)
     def test_update_exercise(
             self,
             exercises_client: ExercisesClient,
@@ -77,7 +102,11 @@ class TestExercises:
         assert_update_exercise_response(actual=response_data, expected=request)
         validate_json_schema(response.json(), GetExerciseResponseSchema.model_json_schema())
 
-
+    @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.tag(AllureTag.DELETE_ENTITY)
+    @allure.title("Delete exercise")
+    @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.DELETE_ENTITY)
     def test_delete_exercise(
             self,
             exercises_client: ExercisesClient,
@@ -98,7 +127,11 @@ class TestExercises:
 
         validate_json_schema(get_response.json(), InternalErrorResponseSchema.model_json_schema())
 
-
+    @allure.story(AllureStory.GET_ENTITIES)
+    @allure.tag(AllureTag.GET_ENTITIES)
+    @allure.title("Get exercises")
+    @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.GET_ENTITIES)
     def test_get_exercises(
             self,
             exercises_client: ExercisesClient,
