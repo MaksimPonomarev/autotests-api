@@ -1,0 +1,134 @@
+from http import HTTPStatus
+from http.client import HTTPResponse
+
+import pytest
+from httpx import request
+
+from lesson6.clients.errors_schema import InternalErrorResponseSchema
+from lesson6.clients.exercises.exercises_client import ExercisesClient
+from lesson6.clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, \
+    GetExerciseResponseSchema, UpdateExerciseRequestSchema, GetExercisesQuerySchema, GetExercisesResponseSchema
+from lesson6.fixtures.courses import CourseFixture
+from lesson6.fixtures.exercises import function_exercise, ExerciseFixture
+from lesson6.tools.assertions.base import assert_status_code
+from lesson6.tools.assertions.exercises import assert_create_exercise_response, assert_get_exercise_response, \
+    assert_update_exercise_response, assert_exercise_not_found_response, assert_get_exercises_response
+from lesson6.tools.assertions.schema import validate_json_schema
+
+
+@pytest.mark.exercises
+@pytest.mark.regression
+class TestExercises:
+    """
+    Тестовый класс для заданий
+    """
+    def test_create_exercise(
+            self,
+            exercises_client: ExercisesClient,
+            function_course: CourseFixture
+    ):
+        """
+        Тест проверяет создание задания
+        :param exercises_client: ExercisesClient
+        :param function_course: CourseFixture
+        """
+        request = CreateExerciseRequestSchema(course_id=function_course.response.course.id)
+        response = exercises_client.create_exercise_api(request)
+        response_data = CreateExerciseResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_create_exercise_response(actual=response_data, expected=request)
+        validate_json_schema(response.json(), CreateExerciseResponseSchema.model_json_schema())
+
+
+    def test_get_exercise(
+            self,
+            exercises_client: ExercisesClient,
+            function_exercise: ExerciseFixture
+    ):
+        """
+       Проверяет успешное получение задания по его идентификатору.
+       """
+        response = exercises_client.get_exercise_api(function_exercise.response.exercise.id)
+        response_data = GetExerciseResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_get_exercise_response(
+            get_exercise_response=response_data,
+            create_exercise_response= function_exercise.response
+        )
+
+        validate_json_schema(response.json(), GetExerciseResponseSchema.model_json_schema())
+
+
+    def test_update_exercise(
+            self,
+            exercises_client: ExercisesClient,
+            function_exercise: ExerciseFixture
+    ):
+        """
+       Проверяет успешное обновление задания по его идентификатору.
+       """
+        request = UpdateExerciseRequestSchema()
+        response = exercises_client.update_exercise_api(function_exercise.response.exercise.id, request)
+        response_data = GetExerciseResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_update_exercise_response(actual=response_data, expected=request)
+        validate_json_schema(response.json(), GetExerciseResponseSchema.model_json_schema())
+
+
+    def test_delete_exercise(
+            self,
+            exercises_client: ExercisesClient,
+            function_exercise: ExerciseFixture
+    ):
+        """
+        Проверяет успешное удаление задания по его идентификатору.
+        """
+        delete_response = exercises_client.delete_exercise_api(function_exercise.response.exercise.id)
+        assert_status_code(delete_response.status_code, HTTPStatus.OK)
+
+        get_response = exercises_client.get_exercise_api(function_exercise.response.exercise.id)
+        response_data = InternalErrorResponseSchema.model_validate_json(get_response.text)
+        assert_status_code(get_response.status_code, HTTPStatus.NOT_FOUND)
+
+        assert_exercise_not_found_response(actual=response_data)
+
+
+        validate_json_schema(get_response.json(), InternalErrorResponseSchema.model_json_schema())
+
+
+    def test_get_exercises(
+            self,
+            exercises_client: ExercisesClient,
+            function_exercise: ExerciseFixture,
+            function_course: CourseFixture
+    ):
+        """
+        Проверяет получение всех заданий
+        """
+        query = GetExercisesQuerySchema(course_id=function_course.response.course.id)
+        response = exercises_client.get_exercises_api(query=query)
+        response_data = GetExercisesResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_get_exercises_response(get_exercises_response=response_data, create_exercise_responses=[function_exercise.response])
+
+        validate_json_schema(response.json(), GetExercisesResponseSchema.model_json_schema())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
