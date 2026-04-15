@@ -1,6 +1,7 @@
 import pytest
 from pydantic import BaseModel
 
+from config import settings
 from lesson6.clients.files.files_client import get_files_client, FilesClient
 from lesson6.clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema
 from lesson6.fixtures.users import UserFixture
@@ -18,6 +19,6 @@ def files_client(function_user: UserFixture) -> FilesClient:
 
 @pytest.fixture
 def function_file(files_client: FilesClient) -> FileFixture:
-    request = CreateFileRequestSchema(upload_file=r"C:\Users\mr\PycharmProjects\autotests-api\testdata\files\image.png")
+    request = CreateFileRequestSchema(upload_file=settings.test_data.image_png_file)
     response = files_client.create_file(request)
     return FileFixture(request=request, response=response)
