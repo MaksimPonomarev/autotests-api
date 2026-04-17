@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTE2VDIyOjQ4OjI5LjQ3NDQ4NSIsInVzZXJfaWQiOiJkMDliM2M3YS1lNjc4LTRkZGQtYmRlNy0zMDNjNWI0YmI4MTEifQ.dmvMBr4EyRVEjhB0hO2Bs4E9rdtEt7bmK9z7LTY50J8' \
+  -H 'content-length: 376' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Imagine successful with series increase option organization.","maxScore":85,"minScore":21,"description":"Whole cost point similar drug. Develop financial charge area effort weight majority trade. Address physical with arm for.","estimatedTime":"7 weeks","previewFileId":"778f9f98-ddbd-4f0c-a31a-ffca2da65131","createdByUserId":"d09b3c7a-e678-4ddd-bde7-303c5b4bb811"}'

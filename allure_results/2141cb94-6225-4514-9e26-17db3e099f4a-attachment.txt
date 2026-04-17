@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTE2VDIyOjQ4OjUyLjkxOTY1NCIsInVzZXJfaWQiOiI3NzI3OTc1Zi04ODI0LTQwMTctYTJkMS02NmVjOGViNzQ5Y2MifQ.tK66NDCAQ4oilzN1CAt2SbHwikZOm5EK9T6y-EPxhcE' \
+  -H 'content-length: 402' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Lay hot nice area police another some.","maxScore":64,"minScore":12,"description":"Ground practice campaign employee agreement. Area plant often our.\nSpend else beyond model hour. Fill continue her way before theory. Relationship international either.","estimatedTime":"5 weeks","previewFileId":"4d6cd36d-3777-445f-b692-944f60c806bf","createdByUserId":"7727975f-8824-4017-a2d1-66ec8eb749cc"}'

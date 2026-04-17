@@ -1,0 +1,33 @@
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:28 Make GET request to http://localhost:8000/api/v1/courses?userId=751a2cbb-dc85-45c4-9d73-f2fd2d30e6a7
+[32mINFO    [0m HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses?userId=751a2cbb-dc85-45c4-9d73-f2fd2d30e6a7
+[32mINFO    [0m BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+[32mINFO    [0m COURSES_ASSERTIONS:courses.py:65 Check get course response
+[32mINFO    [0m BASE_ASSERTIONS:base.py:70 Check that length of courses equals to 1
+[32mINFO    [0m COURSES_ASSERTIONS:courses.py:41 Check course
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'id' equals to 'aacf59b7-73d2-40e4-9529-7d6d88b8ae49'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'Use wonder without report news.'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '100'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '21'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Student seem great especially night beautiful cold. Above treatment team discuss relate leg need. Order civil those perform opportunity above after.
+Party training employee exactly view prepare.'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '6 weeks'
+[32mINFO    [0m FILES_ASSERTIONS:files.py:42 Check file
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'id' equals to '3f5dbc21-154a-4268-a088-30ec51c0efca'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'url' equals to 'http://localhost:8000/static/tests/5f9d7ef7-8b43-4e15-a39c-1a1975c06d22.png'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'filename' equals to '5f9d7ef7-8b43-4e15-a39c-1a1975c06d22.png'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'directory' equals to 'tests'
+[32mINFO    [0m USERS_ASSERTIONS:users.py:34 Check user
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'id' equals to '751a2cbb-dc85-45c4-9d73-f2fd2d30e6a7'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'email' equals to 'rodriguezbrian@example.org'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'last_name' equals to 'Burns'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'first_name' equals to 'Christina'
+[32mINFO    [0m BASE_ASSERTIONS:base.py:37 Check that 'middle_name' equals to 'Andrew'
+[32mINFO    [0m SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

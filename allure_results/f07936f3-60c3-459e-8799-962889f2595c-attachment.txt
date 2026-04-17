@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTE2VDIyOjQ4OjM3LjI2MjI2OSIsInVzZXJfaWQiOiIwMDNiYTIzZC1iYjFiLTQ5NzItODA2YS1mYjI0NGU2MTc3MTgifQ.znrFw4H0JCUMs5OCI9vqk6eV88w5sItmCrNddUvaGw4' \
+  -H 'content-length: 402' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Hundred world laugh heavy.","maxScore":91,"minScore":9,"description":"To year mention politics our lot. Force recent nature food environment coach.\nDebate actually north hope represent.\nBenefit pattern reach goal environment there. Father rule admit.","estimatedTime":"1 weeks","previewFileId":"799b3701-9e7e-4ccb-84b7-bf318688978a","createdByUserId":"003ba23d-bb1b-4972-806a-fb244e617718"}'

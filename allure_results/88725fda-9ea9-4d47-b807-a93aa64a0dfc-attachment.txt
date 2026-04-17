@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTE2VDIyOjQ5OjA4LjQ3Mzg1NiIsInVzZXJfaWQiOiIxYTZlOGEwNC0yNWMwLTRlYTEtOTA2Ni0zZjc4OWFmM2Y4ODUifQ.5spI0vUdCny0iqcJtdVL8oEUSRbQqPEeSUYlWTjPfg0' \
+  -H 'content-length: 351' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Scientist high field will similar.","maxScore":63,"minScore":19,"description":"Officer season much fill everybody movement these. Today time understand million care figure. Development fast color wind.","estimatedTime":"4 weeks","previewFileId":"9c358244-0f09-4827-9e73-2d560c32abc3","createdByUserId":"1a6e8a04-25c0-4ea1-9066-3f789af3f885"}'

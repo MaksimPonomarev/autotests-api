@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTE2VDIyOjQ5OjAwLjY4NjY1NyIsInVzZXJfaWQiOiJjNzNkNTljMi1mOGRhLTQ5ODItOWNlYy1hYWIzYmU0ZDBlZTYifQ.FTCl7mVErn2uLwlvzhvWK0OXLKhMVctpY06KIo7Ttnc' \
+  -H 'content-length: 310' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Project son staff social blood.","maxScore":67,"minScore":3,"description":"Particular certain these beyond eat. Collection degree because we. Along ago manager.","estimatedTime":"2 weeks","previewFileId":"ddd1f344-8ca0-4c8a-b58b-3873344cdd86","createdByUserId":"c73d59c2-f8da-4982-9cec-aab3be4d0ee6"}'
