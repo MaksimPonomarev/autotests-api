@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/2e67b873-047f-45f9-adec-d72ccc53ddd0' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjM0LjA0NzE0OSIsInVzZXJfaWQiOiJhNjFkZmNkMy0xZWE4LTRkNDUtOTdhNi0zMTIyZjEyY2VhZTcifQ.M5g-54FCw4BNKDCMznqq-mRZeRGsRKwiSftHZQuI96E' \
+  -H 'content-length: 313' \
+  -H 'content-type: application/json' \
+  -d '{"title":"War idea assume.","maxScore":74,"minScore":29,"orderIndex":37,"description":"Try store arrive beyond upon community. Head make technology bed page road.\nTest single property field. Send stand ten situation Congress. Reach brother direction happy girl mission prepare nature.","estimatedTime":"3 weeks"}'

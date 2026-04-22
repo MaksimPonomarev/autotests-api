@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:22 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'Positive expect ahead college.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '97'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '28'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Late science here minute. Gas push person never check until movie.
+Draw boy learn report serve half say. Cup right sea determine add room pay.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '10 weeks'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'course_id' equals to '6bb8291a-3e61-4a74-9fb2-8325ab93aaed'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'order_index' equals to '57'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

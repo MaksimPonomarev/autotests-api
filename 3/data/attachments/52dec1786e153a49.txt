@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjM0LjA0NzE0OSIsInVzZXJfaWQiOiJhNjFkZmNkMy0xZWE4LTRkNDUtOTdhNi0zMTIyZjEyY2VhZTcifQ.M5g-54FCw4BNKDCMznqq-mRZeRGsRKwiSftHZQuI96E' \
+  -H 'content-length: 376' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Music security rule a follow list often writer.","maxScore":99,"minScore":21,"description":"Computer another few on mind. Wonder heart deep six stuff executive. Mention wife show others force specific.\nSister cover leave few.","estimatedTime":"7 weeks","previewFileId":"df0f187e-2283-4573-8c84-e9f272aabf7f","createdByUserId":"a61dfcd3-1ea8-4d45-97a6-3122f12ceae7"}'

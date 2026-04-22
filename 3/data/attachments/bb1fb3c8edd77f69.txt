@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjMzLjczOTA5OSIsInVzZXJfaWQiOiJhOTZiYWQyMi01MDg4LTRhZmItOTYzOS1iYWUzYzcxNWViOTgifQ.An88kQXA7ePZaqEenqzSbdTzseGhPdDmDjG_Trc38aQ' \
+  -H 'content-length: 344' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Lawyer reason this friend.","maxScore":90,"minScore":3,"description":"Build economy structure send moment interview. They hundred join any he throw. Community book they take east cultural paper.","estimatedTime":"3 weeks","previewFileId":"58918f3c-9eaf-4960-920d-ade44dee7611","createdByUserId":"a96bad22-5088-4afb-9639-bae3c715eb98"}'

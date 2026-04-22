@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjMzLjczOTA5OSIsInVzZXJfaWQiOiJhOTZiYWQyMi01MDg4LTRhZmItOTYzOS1iYWUzYzcxNWViOTgifQ.An88kQXA7ePZaqEenqzSbdTzseGhPdDmDjG_Trc38aQ' \
+  -H 'content-length: 323' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Positive expect ahead college.","courseId":"6bb8291a-3e61-4a74-9fb2-8325ab93aaed","maxScore":97,"minScore":28,"orderIndex":57,"description":"Late science here minute. Gas push person never check until movie.\nDraw boy learn report serve half say. Cup right sea determine add room pay.","estimatedTime":"10 weeks"}'

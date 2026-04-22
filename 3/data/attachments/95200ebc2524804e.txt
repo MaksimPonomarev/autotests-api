@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjM0LjA0NzE0OSIsInVzZXJfaWQiOiJhNjFkZmNkMy0xZWE4LTRkNDUtOTdhNi0zMTIyZjEyY2VhZTcifQ.M5g-54FCw4BNKDCMznqq-mRZeRGsRKwiSftHZQuI96E' \
+  -H 'content-length: 371' \
+  -H 'content-type: application/json' \
+  -d '{"title":"News imagine remain sing attention anything represent Mrs.","courseId":"de5bace3-5f3d-46e6-8496-5498c1baf77b","maxScore":61,"minScore":17,"orderIndex":83,"description":"Consumer past organization again situation take relate nor. Class choice white everything star listen.\nWhich quickly above oil unit shake. Explain air nation cold.","estimatedTime":"7 weeks"}'

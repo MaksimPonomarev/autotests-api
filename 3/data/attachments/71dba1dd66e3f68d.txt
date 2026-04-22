@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjMxLjA1NTYxMiIsInVzZXJfaWQiOiIzZDdhNTdjZC03YjhiLTRhMTQtYTJkYi00NjBlZWRmNTJmZjgifQ.REjvT2C_2hV2ZtuZSeBPWICIfDI5kdtm1kriYC4Sydk' \
+  -H 'content-length: 435' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Seek detail leg ahead factor animal threat.","maxScore":90,"minScore":15,"description":"Activity Congress read who section happy. Believe from level approach mother. Interesting choice hot commercial economic father.\nData send statement language. Machine woman employee think we take.","estimatedTime":"9 weeks","previewFileId":"0e0c2f21-83f2-4804-9c71-4f1f9b821cf3","createdByUserId":"3d7a57cd-7b8b-4a14-a2db-460eedf52ff8"}'

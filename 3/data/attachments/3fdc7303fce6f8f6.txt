@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjMyLjA0Njg5MyIsInVzZXJfaWQiOiI0MWY0OGFmMS1mNzBjLTQ2OTAtOGQzZC03Yzk3OTUwZmU4MTcifQ.h8dK4N5DvG8WGGhFvqSkOt0uHYQbDauNBeQRvcX4C3A' \
+  -H 'content-length: 328' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Whether paper face form form especially give explain.","maxScore":66,"minScore":3,"description":"Run none join part reality. Onto though figure claim Congress of research market.","estimatedTime":"3 weeks","previewFileId":"7e8d3c93-915a-4ccd-b194-1d853ebaed6c","createdByUserId":"41f48af1-f70c-4690-8d3d-7c97950fe817"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjM2LjQwNzY2NSIsInVzZXJfaWQiOiI2YjA3NGQ1Mi1hM2VhLTQxYTktODAyYy0wZmRjMWZiYzJiM2IifQ.aJZv23Yr61eRRlIePN0HGYqpLXyHAvc7rF3gfQyxBm0' \
+  -H 'content-length: 413' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Family risk beyond blood.","maxScore":60,"minScore":8,"description":"Job medical south bar. To life tough strong rich election. Over accept thing fish discover key.\nShe sport like agreement worker. Apply under center statement. Training Republican physical main.","estimatedTime":"8 weeks","previewFileId":"c4e66c47-7f51-4d73-b2d5-6b5205de401c","createdByUserId":"6b074d52-a3ea-41a9-802c-0fdc1fbc2b3b"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjM1LjA2MTE4MiIsInVzZXJfaWQiOiIyN2NlNWViNy1kZDc5LTQwMDItYmVjZS01ZmRmMjZmZWMyOTgifQ.j9ZT8sEuSOGFSJT09_Lh3WAyOfQ7l9aDBMbT82Zd3K0' \
+  -H 'content-length: 425' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Report end here billion lead lay.","maxScore":87,"minScore":15,"description":"Six interesting soldier purpose. Others which hope day skin. Himself me degree enough institution.\nResponsibility though better father end offer house money. Also house road yes fly set available.","estimatedTime":"6 weeks","previewFileId":"4cbbb015-671a-4018-9424-1b723632a7ef","createdByUserId":"27ce5eb7-dd79-4002-bece-5fdf26fec298"}'

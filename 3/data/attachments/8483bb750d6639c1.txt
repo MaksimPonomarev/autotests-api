@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make PATCH request to http://localhost:8000/api/v1/courses/41ed19f4-7a3f-4fc3-8905-31ac092365bd
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses/41ed19f4-7a3f-4fc3-8905-31ac092365bd
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'These real loss player.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '56'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '21'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Require yard network financial foreign reason even run. Avoid value exist project fine its.
+Include art young wear nation seem.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '6 weeks'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

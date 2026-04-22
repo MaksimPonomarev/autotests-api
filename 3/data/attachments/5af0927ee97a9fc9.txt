@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjMyLjczMjcxOSIsInVzZXJfaWQiOiI1Njc0MDIxNS1kNTEwLTRhYzMtYjMyMy1lNWMwYTc3NTk0NmEifQ.YQjKlfTtb4mOO6IhRqVRpWJyWN8Ozf3xF_KPWlHAzBw' \
+  -H 'content-length: 380' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Product game born staff reason house.","maxScore":67,"minScore":17,"description":"Agree success social industry season. Without woman movie catch indeed space. Truth half once music.\nTechnology create day. Fish Democrat probably.","estimatedTime":"8 weeks","previewFileId":"84e7d6a6-1515-4120-9196-7497afd32c69","createdByUserId":"56740215-d510-4ac3-b323-e5c0a775946a"}'

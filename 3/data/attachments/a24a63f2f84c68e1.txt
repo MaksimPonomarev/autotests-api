@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/41ed19f4-7a3f-4fc3-8905-31ac092365bd' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjMxLjA1NTYxMiIsInVzZXJfaWQiOiIzZDdhNTdjZC03YjhiLTRhMTQtYTJkYi00NjBlZWRmNTJmZjgifQ.REjvT2C_2hV2ZtuZSeBPWICIfDI5kdtm1kriYC4Sydk' \
+  -H 'content-length: 234' \
+  -H 'content-type: application/json' \
+  -d '{"title":"These real loss player.","maxScore":56,"minScore":21,"description":"Require yard network financial foreign reason even run. Avoid value exist project fine its.\nInclude art young wear nation seem.","estimatedTime":"6 weeks"}'

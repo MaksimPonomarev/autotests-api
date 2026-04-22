@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQxOjM1LjM3NTIxNiIsInVzZXJfaWQiOiIwMTQzNDY3NC05NjU5LTQ5MWEtODFkOC01NjJiZjRkNWJkZDgifQ.bxIBTiaoYa8otP2gHC9wNVGizLUZgxe-7A1N7HxCfiM' \
+  -H 'content-length: 379' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Term fight space her forward.","maxScore":90,"minScore":3,"description":"Realize really responsibility around ever stay. The cup bad program worker reflect culture. Energy positive whose official yard commercial environment deal.","estimatedTime":"3 weeks","previewFileId":"3287f1d4-bcee-48a7-9898-ecd7ae71b986","createdByUserId":"01434674-9659-491a-81d8-562bf4d5bdd8"}'
