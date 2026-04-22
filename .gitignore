@@ -5,3 +5,5 @@ __pycache__/
 .venv/
 .idea/
 allure_results
+.allure_results
+1
