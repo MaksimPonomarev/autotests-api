@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjEyLjA3NTcwNyIsInVzZXJfaWQiOiJhM2MwOWIzYS1hNjk0LTQwNjctYTg0ZS1hOWQxNWUwMWU1OWYifQ.U0UuhSafy9bjVmFSnlDO3NoYcUv5YOvBXXWPyyD-sZc' \
+  -H 'content-length: 438' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Something dream machine shake dog young study.","maxScore":76,"minScore":24,"description":"Happen stage bring focus enter amount. Writer science wall road fill.\nBack party sit scientist. Prevent by information day remain call memory. Success least eight factor perform over risk realize.","estimatedTime":"5 weeks","previewFileId":"7ffd080d-0a37-4209-9e6e-5be32e3e9980","createdByUserId":"a3c09b3a-a694-4067-a84e-a9d15e01e59f"}'

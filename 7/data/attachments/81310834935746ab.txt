@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/15bc685f-bc71-4519-8993-995672297e97' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjA3LjgxODczNiIsInVzZXJfaWQiOiI5ZDA4ZGM1Yy01M2ZiLTRjNTctOGY2Ni1hMDUzZmI3MjExNjkifQ.2KkETRRhcL3-ft0pgq2iJ1C4ZaK3iRBRAiAe3a_O1eA' \
+  -H 'content-length: 198' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Me usually open.","maxScore":60,"minScore":11,"description":"Decade suffer can network heavy message. During go history result. Pay high indicate save nor each.","estimatedTime":"6 weeks"}'

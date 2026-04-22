@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjEwLjI1MjY1MyIsInVzZXJfaWQiOiI5NzRiOWUyMS1kYWVkLTRmYjgtOWMwZi1mMWI0MWI1ZGJkZjQifQ.HpFXIJha5EA08SHy-s-BHr-uEASiQ8imehh-Y_ynvmk' \
+  -H 'content-length: 346' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Toward activity science break.","maxScore":50,"minScore":5,"description":"Source situation specific man recently. Sure nature gun choose cover learn. Now term television eat painting dream bring.","estimatedTime":"10 weeks","previewFileId":"d0ee0cee-16b3-4ce4-90d3-5cb6fd686705","createdByUserId":"974b9e21-daed-4fb8-9c0f-f1b41b5dbdf4"}'

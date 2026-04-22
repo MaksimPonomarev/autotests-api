@@ -1,0 +1,26 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:28 Make GET request to http://localhost:8000/api/v1/exercises?courseId=230098ed-6997-4bcb-a700-905f5c63d7be
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=230098ed-6997-4bcb-a700-905f5c63d7be
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:109 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:70 Check that length of exercises equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:40 Check exercise
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'id' equals to '9402f984-ff09-4e99-8592-c86eea98689d'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'Risk force personal almost leave skill skill.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'course_id' equals to '230098ed-6997-4bcb-a700-905f5c63d7be'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '60'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '30'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'order_index' equals to '18'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Less money issue scene painting.
+Exactly free support sell make view present herself. Catch indeed generation southern person appear.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '2 weeks'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

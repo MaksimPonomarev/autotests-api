@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjA5LjA4MzQyMCIsInVzZXJfaWQiOiI4YWQ5NWYzYy1jZWQ0LTRjY2MtYWFiOC0zMDJhMzIwNWEwZDgifQ.wWw2jxEoQEQZBRDxb6WEvw2vPQEiFYr_iXI-Wv4kEVE' \
+  -H 'content-length: 431' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Raise everything but bring strong new population.","maxScore":72,"minScore":12,"description":"Yet which whose food according over. Act little again support recently buy.\nCouple soon our issue. Item allow thing word find let involve. Ball loss air those edge who picture agreement.","estimatedTime":"5 weeks","previewFileId":"2b51bc2d-9031-4087-8fee-794dff28ef8b","createdByUserId":"8ad95f3c-ced4-4ccc-aab8-302a3205a0d8"}'

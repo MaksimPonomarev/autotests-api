@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjExLjQ4ODkzOSIsInVzZXJfaWQiOiI5OTUxOWQ3Yi0xYjc5LTQzMWYtYWRlMC1kOTFmYjYzNTk5MmYifQ.YW4-KuuAvunO0_377tKVOXc_sDeQ51GICC6eXGwp_VA' \
+  -H 'content-length: 350' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Science newspaper recent drive possible fly.","maxScore":64,"minScore":18,"description":"They rest another. Machine color exist choose music improve. Notice push today support agreement city include.","estimatedTime":"10 weeks","previewFileId":"2c47ead6-7bde-4e74-857c-6478754af9c2","createdByUserId":"99519d7b-1b79-431f-ade0-d91fb635992f"}'

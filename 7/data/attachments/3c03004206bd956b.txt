@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjA5LjY2NTA0MiIsInVzZXJfaWQiOiIzNzBkMTFkZS05ZDM2LTQyYzctOTkzNC0xMjdjZDg5YWUzOTQifQ.QD4kVd8-gd4rcPA3_Yp1ufYBIKY2TR7XNW7AeT5Mh7I' \
+  -H 'content-length: 320' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Street it view fly area full.","courseId":"31b87e9e-4bf2-463c-8b7b-7018c9731a19","maxScore":87,"minScore":25,"orderIndex":38,"description":"Anything fly professor article tough begin read. Beautiful quickly share career most realize law. Word identify north vote design worker back.","estimatedTime":"6 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjA3LjgxODczNiIsInVzZXJfaWQiOiI5ZDA4ZGM1Yy01M2ZiLTRjNTctOGY2Ni1hMDUzZmI3MjExNjkifQ.2KkETRRhcL3-ft0pgq2iJ1C4ZaK3iRBRAiAe3a_O1eA' \
+  -H 'content-length: 378' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Nor professional perform bring always.","maxScore":60,"minScore":24,"description":"Raise possible these scene debate affect edge. Remember appear unit science. Good amount detail skill.\nShake good resource local wonder purpose.","estimatedTime":"9 weeks","previewFileId":"98472cc1-0f9b-4a11-a1a3-e08f0b55cf41","createdByUserId":"9d08dc5c-53fb-4c57-8f66-a053fb721169"}'

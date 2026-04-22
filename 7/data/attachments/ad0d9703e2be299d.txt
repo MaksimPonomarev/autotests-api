@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjEwLjg0MTMwNSIsInVzZXJfaWQiOiIwYjZmNzRkMS05OGI0LTRhMmYtOTFiMy02YTQwOTgzZmRlOTIifQ.cG2Gorat0nD9FafKEXU56lcA66zpMrEaJHRZFrzzyCg' \
+  -H 'content-length: 278' \
+  -H 'content-type: application/json' \
+  -d '{"title":"It single outside each.","maxScore":79,"minScore":6,"description":"Not type national successful. Television manage dark suggest.","estimatedTime":"9 weeks","previewFileId":"3b302f03-cd03-4b4d-ab18-fef386ce8417","createdByUserId":"0b6f74d1-98b4-4a2f-91b3-6a40983fde92"}'

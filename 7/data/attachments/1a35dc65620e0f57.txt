@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjA5LjY2NTA0MiIsInVzZXJfaWQiOiIzNzBkMTFkZS05ZDM2LTQyYzctOTkzNC0xMjdjZDg5YWUzOTQifQ.QD4kVd8-gd4rcPA3_Yp1ufYBIKY2TR7XNW7AeT5Mh7I' \
+  -H 'content-length: 332' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Society bill two keep.","maxScore":92,"minScore":18,"description":"Position sell nation crime enough. Art hotel ready land event name alone also.\nPiece if next. Establish hope book.","estimatedTime":"7 weeks","previewFileId":"bef2d45e-3856-4d88-b803-2dace35f9ebb","createdByUserId":"370d11de-9d36-42c7-9934-127cd89ae394"}'

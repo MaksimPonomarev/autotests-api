@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/583d3e30-b288-402e-91b1-b05bb407b0c3' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAxOjM4OjEwLjI1MjY1MyIsInVzZXJfaWQiOiI5NzRiOWUyMS1kYWVkLTRmYjgtOWMwZi1mMWI0MWI1ZGJkZjQifQ.HpFXIJha5EA08SHy-s-BHr-uEASiQ8imehh-Y_ynvmk' \
+  -H 'content-length: 292' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Cut family whom son.","maxScore":86,"minScore":4,"orderIndex":39,"description":"Task energy shake general. Thought everybody technology return.\nSomeone between magazine scene although resource well. Little conference position learn. Less its past guess.","estimatedTime":"2 weeks"}'

@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:83 Check create course response
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'Raise everything but bring strong new population.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '72'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '12'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Yet which whose food according over. Act little again support recently buy.
+Couple soon our issue. Item allow thing word find let involve. Ball loss air those edge who picture agreement.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '5 weeks'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'preview_file_id' equals to '2b51bc2d-9031-4087-8fee-794dff28ef8b'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'created_by_user_id' equals to '8ad95f3c-ced4-4ccc-aab8-302a3205a0d8'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema
