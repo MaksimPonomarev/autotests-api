@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQzOjMyLjg0MzQyMCIsInVzZXJfaWQiOiJhYmNlZWU0OS0wMTQ4LTQzZGMtYmNiNC0zYjc0MGM0MzEwN2YifQ.jH8CeTMjzHdPWPRJSvlGK9TVr-aVFZupEBRMq-MxLlw' \
+  -H 'content-length: 348' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Score throughout system this join degree.","maxScore":85,"minScore":11,"description":"Feeling several inside carry sell Mrs carry. Threat myself property kid my artist. Guy ten guess red wish those.","estimatedTime":"7 weeks","previewFileId":"49e822bf-b00d-4da2-8d75-8f6893c5526d","createdByUserId":"abceee49-0148-43dc-bcb4-3b740c43107f"}'

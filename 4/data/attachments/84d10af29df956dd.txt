@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQzOjMzLjQ5NjIzNSIsInVzZXJfaWQiOiJiMGRiMDE3NS0zZjAxLTQ4NTYtYWMwMi04NTIwYzUyZTY5YjIifQ.NqsZcfHFXGxxIdvMybpAoclE9XFT_m3NMGZo3HLKm3c' \
+  -H 'content-length: 429' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Cost resource near manage determine.","maxScore":89,"minScore":4,"description":"Reality cell impact program. Medical arrive past industry which talk. Themselves feeling better politics along.\nMatter bill situation middle stop crime laugh. Could fire expect country design state.","estimatedTime":"2 weeks","previewFileId":"2bd0a547-8079-47c8-abfa-c07f161c8bc1","createdByUserId":"b0db0175-3f01-4856-ac02-8520c52e69b2"}'

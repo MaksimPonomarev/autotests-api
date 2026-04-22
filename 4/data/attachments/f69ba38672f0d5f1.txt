@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQzOjM0LjE0NTQ4MSIsInVzZXJfaWQiOiI4MTE4NGY2Yy03YTNmLTQ0MGYtYTc2My03ZmQ3NWZhNDk5YmEifQ.nusya783l9NjX2vbmbhY2AItC134YopwjyayazikkD8' \
+  -H 'content-length: 423' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wife true Republican analysis memory.","maxScore":90,"minScore":8,"description":"Which during identify act. Economic avoid example risk. Start tonight surface federal from.\nDrop measure respond not. Audience hot office charge quality lose. Any threat challenge good agree.","estimatedTime":"6 weeks","previewFileId":"de76b4f4-6953-4f1d-a116-d3622eb31fd8","createdByUserId":"81184f6c-7a3f-440f-a763-7fd75fa499ba"}'

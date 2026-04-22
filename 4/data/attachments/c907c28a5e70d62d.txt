@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make PATCH request to http://localhost:8000/api/v1/courses/268e6809-c0b9-444c-ae36-9501a47080a1
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses/268e6809-c0b9-444c-ae36-9501a47080a1
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'History case hold mind from.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '61'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '7'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Mission song go group page. Bed by area.
+Even here cell involve modern home. Require purpose research major within contain process. Coach law bill. Guess house perform inside.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '2 weeks'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validating JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQzOjM0LjE0NTQ4MSIsInVzZXJfaWQiOiI4MTE4NGY2Yy03YTNmLTQ0MGYtYTc2My03ZmQ3NWZhNDk5YmEifQ.nusya783l9NjX2vbmbhY2AItC134YopwjyayazikkD8' \
+  -H 'content-length: 359' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Hotel a product everybody its.","courseId":"88f328a9-697e-401f-a650-072b795001c7","maxScore":53,"minScore":27,"orderIndex":80,"description":"Clear wide similar must. Catch money less I everything. Through begin charge ten program challenge house total.\nEvidence market minute although. Environmental decide buy cup thus.","estimatedTime":"6 weeks"}'

@@ -1,0 +1,32 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","300","Get file with incorrect file id","LMS service","Wed Apr 22 00:13:40 UTC 2026","passed","Wed Apr 22 00:13:41 UTC 2026","Validate entity","Files","",""
+"","320","Create user","LMS service","Wed Apr 22 00:13:41 UTC 2026","passed","Wed Apr 22 00:13:41 UTC 2026","Create entity","Users","",""
+"","624","Create user","LMS service","Wed Apr 22 00:13:41 UTC 2026","passed","Wed Apr 22 00:13:41 UTC 2026","Create entity","Users","",""
+"","611","Create user","LMS service","Wed Apr 22 00:13:40 UTC 2026","passed","Wed Apr 22 00:13:41 UTC 2026","Create entity","Users","",""
+"
+Проверяет успешное получение задания по его идентификатору.
+","13","Get exercise","LMS service","Wed Apr 22 00:13:35 UTC 2026","passed","Wed Apr 22 00:13:35 UTC 2026","Get entity","Exercises","",""
+"","618","Login with correct email and password","LMS service","Wed Apr 22 00:13:31 UTC 2026","passed","Wed Apr 22 00:13:32 UTC 2026","Login","Authentication","",""
+"
+Проверяет успешное обновление задания по его идентификатору.
+","325","Update exercise","LMS service","Wed Apr 22 00:13:35 UTC 2026","passed","Wed Apr 22 00:13:35 UTC 2026","Update entity","Exercises","",""
+"","24","Get courses","LMS service","Wed Apr 22 00:13:33 UTC 2026","passed","Wed Apr 22 00:13:33 UTC 2026","Get entities","Courses","",""
+"","14","Get file","LMS service","Wed Apr 22 00:13:38 UTC 2026","passed","Wed Apr 22 00:13:38 UTC 2026","Get entity","Files","",""
+"","298","Create file with empty filename","LMS service","Wed Apr 22 00:13:38 UTC 2026","passed","Wed Apr 22 00:13:39 UTC 2026","Validate entity","Files","",""
+"","302","Create file","LMS service","Wed Apr 22 00:13:37 UTC 2026","passed","Wed Apr 22 00:13:37 UTC 2026","Create entity","Files","",""
+"","18","Delete file","LMS service","Wed Apr 22 00:13:40 UTC 2026","passed","Wed Apr 22 00:13:40 UTC 2026","Delete entity","Files","",""
+"","12","Get user me","LMS service","Wed Apr 22 00:13:42 UTC 2026","passed","Wed Apr 22 00:13:42 UTC 2026","Get entity","Users","",""
+"","25","Create course","LMS service","Wed Apr 22 00:13:33 UTC 2026","passed","Wed Apr 22 00:13:33 UTC 2026","Create entity","Courses","",""
+"
+Проверяет получение всех заданий
+","318","Get exercises","LMS service","Wed Apr 22 00:13:36 UTC 2026","passed","Wed Apr 22 00:13:37 UTC 2026","Get entities","Exercises","",""
+"","30","Update course","LMS service","Wed Apr 22 00:13:32 UTC 2026","passed","Wed Apr 22 00:13:32 UTC 2026","Update entity","Courses","",""
+"
+Тест проверяет создание задания
+:param exercises_client: ExercisesClient
+:param function_course: CourseFixture
+","20","Create exercise","LMS service","Wed Apr 22 00:13:34 UTC 2026","passed","Wed Apr 22 00:13:34 UTC 2026","Create entity","Exercises","",""
+"","302","Create file with empty directory","LMS service","Wed Apr 22 00:13:39 UTC 2026","passed","Wed Apr 22 00:13:39 UTC 2026","Validate entity","Files","",""
+"
+Проверяет успешное удаление задания по его идентификатору.
+","17","Delete exercise","LMS service","Wed Apr 22 00:13:36 UTC 2026","passed","Wed Apr 22 00:13:36 UTC 2026","Delete entity","Exercises","",""

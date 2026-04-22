@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQzOjM1LjQ0NzU4OSIsInVzZXJfaWQiOiJiYzU4MWUwZS1iOGRiLTQyODctOThmMC1mZmU2MjI0NTllYmYifQ.7IDMds_kcbA5aqTN-HQ3TbM_7FBci_DCmddBFBnH73k' \
+  -H 'content-length: 407' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Argue movement conference.","maxScore":59,"minScore":21,"description":"Treat everything society. Fine international Republican record rich our. Standard approach south respond.\nThing recognize necessary right hand. Of next long who new. Seat big point hot.","estimatedTime":"8 weeks","previewFileId":"e0a84e19-6e0d-45fb-81ff-d8c575c2006a","createdByUserId":"bc581e0e-b8db-4287-98f0-ffe622459ebf"}'

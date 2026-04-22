@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQzOjM2Ljc5OTE2OCIsInVzZXJfaWQiOiI1MDU1ZWVhOS1mZTY4LTQxOWEtOGY0Yy04MmQyOTUzZDMwNTIifQ.i3X0JDxaeq9cRc9uhU8qajX2cqdcENlOx8fAE33s5mY' \
+  -H 'content-length: 296' \
+  -H 'content-type: application/json' \
+  -d '{"title":"South before TV others health.","maxScore":85,"minScore":3,"description":"Some my tonight student detail. Indicate care night say wait short song.","estimatedTime":"4 weeks","previewFileId":"345b209d-7431-4aa8-8fed-d89229ad5243","createdByUserId":"5055eea9-fe68-419a-8f4c-82d2953d3052"}'

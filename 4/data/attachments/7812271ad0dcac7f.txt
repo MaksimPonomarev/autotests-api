@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQzOjM1LjQ0NzU4OSIsInVzZXJfaWQiOiJiYzU4MWUwZS1iOGRiLTQyODctOThmMC1mZmU2MjI0NTllYmYifQ.7IDMds_kcbA5aqTN-HQ3TbM_7FBci_DCmddBFBnH73k' \
+  -H 'content-length: 319' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Coach dog clearly sing.","courseId":"29bb394b-a43a-47b2-82b8-58b884f51440","maxScore":56,"minScore":11,"orderIndex":81,"description":"Market art most option behavior site nearly. Similar service short available who husband. Range policy investment ahead fine institution national.","estimatedTime":"10 weeks"}'

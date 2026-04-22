@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/268e6809-c0b9-444c-ae36-9501a47080a1' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjQzOjMxLjg1MTU0NiIsInVzZXJfaWQiOiI4YmQ4N2M1Ni01Zjk4LTRhNmYtODZiNS0yNTc2NWM4OGRlY2QifQ.dPtLDh0SmJ89A6SSYMVbXRM8JHQgeIB9Jc1ZGOOWdwg' \
+  -H 'content-length: 286' \
+  -H 'content-type: application/json' \
+  -d '{"title":"History case hold mind from.","maxScore":61,"minScore":7,"description":"Mission song go group page. Bed by area.\nEven here cell involve modern home. Require purpose research major within contain process. Coach law bill. Guess house perform inside.","estimatedTime":"2 weeks"}'
