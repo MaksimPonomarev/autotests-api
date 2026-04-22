@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjUxOjE3Ljk1NDMzMCIsInVzZXJfaWQiOiI1M2UxNGUyYy00ODY4LTRjOWEtOWU2NC04Y2I4NTJkN2JmZTcifQ.oO_YSj-2rax2D7NytwOTRh8tKJwDefdEE9_3AYe1IaQ' \
+  -H 'content-length: 346' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Establish east loss under claim upon less.","maxScore":95,"minScore":21,"description":"Eat surface continue certain maintain. His evening size poor.\nItem respond chance economic different enough.","estimatedTime":"2 weeks","previewFileId":"f15845d2-4852-49ce-bcf9-b77502e79cfe","createdByUserId":"53e14e2c-4868-4c9a-9e64-8cb852d7bfe7"}'

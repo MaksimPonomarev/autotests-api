@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjUxOjE5LjE0NDk2NSIsInVzZXJfaWQiOiIyN2MyNzM5Yy02OWYyLTQ5NDktYWExYy1lNDc1MTkwMGUzMzUifQ.Uym4K4MGDrLHYfMzwG-M9iXe_7iM6el6YX6tP49jW3E' \
+  -H 'content-length: 397' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Learn also lawyer finish say event.","maxScore":86,"minScore":17,"description":"Class important government seem mouth.\nRecent often only as. Turn Mr television happy.\nTrue least address individual whom. Than natural middle strong career clearly.","estimatedTime":"5 weeks","previewFileId":"cbf04fe4-dbae-4945-8b81-719df7981dc3","createdByUserId":"27c2739c-69f2-4949-aa1c-e4751900e335"}'

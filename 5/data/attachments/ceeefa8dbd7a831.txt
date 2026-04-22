@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjUxOjE5LjQxODc1NCIsInVzZXJfaWQiOiIzNDFiZWYzNC1iMDQwLTQwNDEtYjc0Mi1lZWJlNWU0MTc0YmYifQ.S7zCXPUdnNqSKwvK7whCMl6G71FZh1Gzpwsixa1agrw' \
+  -H 'content-length: 338' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Peace thought cost top full realize onto.","maxScore":67,"minScore":19,"description":"Fast follow day shake among. Police try use religious. Second fact likely significant her water stock.","estimatedTime":"3 weeks","previewFileId":"b3cc52ec-b8da-47a1-aeb7-1b7acffd63c6","createdByUserId":"341bef34-b040-4041-b742-eebe5e4174bf"}'

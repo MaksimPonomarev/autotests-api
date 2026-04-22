@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjUxOjE3LjA3ODExMyIsInVzZXJfaWQiOiI0NTkyNjYxZC1lYTEwLTQ4ODUtYWY2Ni1hZTJjYzgxMzc3MTgifQ.wmmC-JP6Y7sx8Bsh_7oVbHhNLFmiv89-UZ4E1CdDYfU' \
+  -H 'content-length: 318' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Western short score line industry six.","maxScore":98,"minScore":3,"description":"Account reflect start easy as early line. Cup language world.\nEvent rise meet choice.","estimatedTime":"1 weeks","previewFileId":"f0947b08-3854-4aca-b684-dd8f37dc2897","createdByUserId":"4592661d-ea10-4885-af66-ae2cc8137718"}'

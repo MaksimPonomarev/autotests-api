@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjUxOjE5LjQxODc1NCIsInVzZXJfaWQiOiIzNDFiZWYzNC1iMDQwLTQwNDEtYjc0Mi1lZWJlNWU0MTc0YmYifQ.S7zCXPUdnNqSKwvK7whCMl6G71FZh1Gzpwsixa1agrw' \
+  -H 'content-length: 272' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Father yes side easy.","courseId":"d1e38e4a-e6b3-4bc1-9713-590a56685cdb","maxScore":96,"minScore":6,"orderIndex":56,"description":"Today put story after eat. Identify message idea weight. Anyone agreement any lay service forget open.","estimatedTime":"10 weeks"}'

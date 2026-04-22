@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/9271fca8-3110-4312-b2f6-863b10e256f2' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjUxOjE1LjU5NDI5NSIsInVzZXJfaWQiOiJmZmE5YjczNS1iZjFiLTQxNWUtYmI2Ny0wNDNlNjdkMTAyMzIifQ.VmT3Hp5yhYJrtMzXQ0MY1O0weuGIZo1_RFnlpl4LjVM' \
+  -H 'content-length: 230' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Attorney very place contain.","maxScore":64,"minScore":28,"description":"Team skill matter west suddenly opportunity prove. Old at hospital now TV you. Save local least second here experience.","estimatedTime":"5 weeks"}'

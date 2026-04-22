@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTIyVDAwOjUxOjIwLjA5Nzk2OCIsInVzZXJfaWQiOiI4MzJlZDg2Ny03NzEzLTRmNzgtODAxYS0xMDQwY2VlZjNlNDcifQ.zqoMkcuxo9XJdOHxJj58BAxhSGJ3i7u1izlNBnxgoOk' \
+  -H 'content-length: 424' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Toward pick door beautiful participant.","maxScore":84,"minScore":20,"description":"Onto decision lose vote. Page all strong cup reduce.\nComputer become responsibility require first little think. Morning garden source them. Go start forward agent per. Seven very all drive.","estimatedTime":"4 weeks","previewFileId":"cb610152-ca9f-45fd-857d-90f15cf50154","createdByUserId":"832ed867-7713-4f78-801a-1040ceef3e47"}'
